@@ -1,0 +1,27 @@
+@font-face {
+    font-family: martian-mono;
+    src: url(../fonts/MartianMono-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    font-family: martian-mono;
+    /* font-size: 14px; */
+    font-size: x-large;
+}
+
+p, li{
+    font-size: 80%;
+}
+
+h1, h2{
+    color: rgb(0%, 100%, 100%);
+}
+
+p{
+    color: rgb(0, 255, 255);
+}
+
+li{
+    color: #00ffff;
+}
+
