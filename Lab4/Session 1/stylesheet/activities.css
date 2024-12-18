@@ -1,0 +1,31 @@
+h1, h2, h3{
+    color: maroon; 
+    font-family: sans-serif; 
+    border-bottom: 2px dotted green;
+}
+
+p{
+    color: gray;
+    font-family: serif;
+    padding: 10px;
+}
+
+p b{
+    font-family: sans-serif;
+}
+
+.green-para{
+    color: green;
+}
+
+.orange-para{
+    color:orange;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bg-purple{
+    background-color: purple;
+}
