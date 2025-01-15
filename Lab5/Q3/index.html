@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Todo</title>
+    <style>
+      p {
+        background-color: silver;
+        font-size: 24px;
+        margin: 20px;
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 5px 15px">
+      <input type="text" id="inputPara" style="padding: 5px;" />
+      <input type="button" value="Add New" onclick="addPara()" style="padding: 5px;" />
+      
+    </div>
+    <div id="paraList"></div>
+
+    <script>
+      function addPara() {
+        let newPara = document.getElementById("inputPara").value;
+
+        let newElem = document.createElement('p')
+        newElem.textContent = newPara
+
+        document.getElementById("paraList").appendChild(newElem);
+
+        document.getElementById("inputPara").value = "";
+      }
+      
+    </script>
+  </body>
+</html>

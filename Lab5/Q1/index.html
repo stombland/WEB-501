@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers</title>
+    <!-- <script type="text/javascript" >
+        document.addEventListener("DOMContentLoaded", () => {
+            let ans = Math.random();
+            document.getElementById('titleNum').innerHTML = ans.toFixed(2);
+            console.log(ans);
+        });
+        function refreshPage(){
+            window.location.reload();
+        }
+    </script> -->
+
+</head>
+<body>
+    <div style=" width: 100%">
+        <div id="titleNum" style="text-align: center; font-size:400px; font-weight:600">
+            0 
+        </div>
+        <div style="text-align: center;"> 
+        <input type="button" id="refreshButton" value="Refresh Page" onClick="refreshPage()" >
+    </div>
+    </div>
+
+
+    <script type="text/javascript" >
+            let ans = Math.random();
+            document.getElementById('titleNum').innerHTML = ans.toFixed(2);
+            console.log(ans);
+
+        function refreshPage(){
+            window.location.reload();
+        }
+
+    </script>
+
+    
+</body>
+</html>

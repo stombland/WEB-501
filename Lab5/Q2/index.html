@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculate</title>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 40vh; margin: 20px">
+      <label for=""> Age : </label>
+      <input type="text" id="age" /> <br />
+      <input type="button" value="submit" onclick="checkAge()" />
+      <h3>It looks like you are: <span id="ageGap"></span></h3>
+    </div>
+
+    <script>
+      let ageGap = "";
+      function checkAge() {
+        let age = document.getElementById("age").value;
+
+        if (age < 0) {
+          alert("Let it born first!");
+        } else if (age < 5) {
+          ageGap = "Infant";
+        } else if (age > 5 && age < 18) {
+          ageGap = "Child";
+        } else if (age > 19) {
+          ageGap = "Adult";
+        }
+        document.getElementById("ageGap").innerHTML = ageGap;
+      }
+      document.getElementById("ageGap").innerHTML = ageGap;
+    </script>
+  </body>
+</html>
